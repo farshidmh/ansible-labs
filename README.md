@@ -40,7 +40,7 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 - 4.1 [Basic](condition/basic/readme.md)
 - 4.2 [Cast variables](condition/cast/readme.md)
 - 4.3 [Complex](condition/complex/readme.md)
-- 4.4 [Assert](condition/complex/readme.md)
+- 4.4 [Assert](condition/assert/readme.md)
 - 4.5 [Challenge](condition/challenge/readme.md)
 
 ### 5. Loops
@@ -55,6 +55,9 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 - 6.1 [Handler](handler/readme.md)
 
 ### 7. Blocks
+
+- 7.1 [Block](block/simple/readme.md)
+
 
 ### 8. Templates
 
