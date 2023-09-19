@@ -37,6 +37,12 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 
 ### 4. Condition
 
+- 4.1 [Basic condition](condition/basic/readme.md)
+- 4.2 [Cast variables in conditions](condition/cast/readme.md)
+- 4.3 [Complex conditions](condition/complex/readme.md)
+- 4.4 [Assert conditions](condition/complex/readme.md)
+- 4.5 [Condition Challenge](condition/challenge/readme.md)
+
 ### 5. Loops
 
 ### 6. Handler
@@ -50,7 +56,7 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 ### 10. Roles
 
 - 3.2 - [Loop](playbook/loop/sample.yml)
-- 3.3 - [Condition](playbook/condition/sample.yml)
+
 - 3.4 - [Handler](playbook/handler/sample.yml)
 - 3.5 - __Sample__: [Apache2](playbook/apache2)
 - 3.6 - __Sample__: [LAMP](playbook/lamp/sample.yml)
