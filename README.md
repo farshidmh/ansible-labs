@@ -33,7 +33,7 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 - 3.3 [Prompt the use](loop/sample.yml)
 - 3.4 [Variables in external](loop/sample.yml)
 - 3.5 [Set Fact](variable/set_fact/readme.md)
-- 3.6 [Register Variable](include/sample.yml)
+- 3.6 [Register Variable](variable/register/readme.md)
 
 ### 4. Condition
 
