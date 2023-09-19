@@ -30,20 +30,25 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 
 - 3.1 [Basic Playbook](variable/vars/sample.yml)
 - 3.2 [Variable in Playbook](variable/vars/sample.yml)
-- 3.3 [Prompt the use](loop/sample.yml)
-- 3.4 [Variables in external](loop/sample.yml)
+- 3.3 [Prompt the use](loop/with_items/item_iteration.yml)
+- 3.4 [Variables in external](loop/with_items/item_iteration.yml)
 - 3.5 [Set Fact](variable/set_fact/readme.md)
 - 3.6 [Register Variable](variable/register/readme.md)
 
 ### 4. Condition
 
-- 4.1 [Basic condition](condition/basic/readme.md)
-- 4.2 [Cast variables in conditions](condition/cast/readme.md)
-- 4.3 [Complex conditions](condition/complex/readme.md)
-- 4.4 [Assert conditions](condition/complex/readme.md)
-- 4.5 [Condition Challenge](condition/challenge/readme.md)
+- 4.1 [Basic](condition/basic/readme.md)
+- 4.2 [Cast variables](condition/cast/readme.md)
+- 4.3 [Complex](condition/complex/readme.md)
+- 4.4 [Assert](condition/complex/readme.md)
+- 4.5 [Challenge](condition/challenge/readme.md)
 
 ### 5. Loops
+
+- 5.1 [With_items](loop/with_items/item_iteration.yml)
+- 5.2 [Loop](loop/loop/readme.md)
+- 5.3 [Loop with external variable](loop/loop_var/readme.md)
+- 5.4 [Loop external task file](loop/loop_task/readme.md)
 
 ### 6. Handler
 
@@ -54,17 +59,3 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 ### 9. Ansible Vault
 
 ### 10. Roles
-
-- 3.2 - [Loop](playbook/loop/sample.yml)
-
-- 3.4 - [Handler](playbook/handler/sample.yml)
-- 3.5 - __Sample__: [Apache2](playbook/apache2)
-- 3.6 - __Sample__: [LAMP](playbook/lamp/sample.yml)
-
-* [Jinja2](jinja2/sample.yml)
-* [Log per Host](extra/log_per_host/README.md)
-* [Fact Caching](extra/fact_cache/README.md)
-
-* __Sample__: [LAMP Role](role/lamp/site.yml)
-* __Sample__: [Wordpress Role](role/wordpress/sites.yml)
-
