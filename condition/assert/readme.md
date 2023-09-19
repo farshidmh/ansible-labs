@@ -75,7 +75,7 @@ ansible-playbook assert_input_example.yml
 
 ## Final File
 
-You can compare your playbook with the [assert_input_example.yml](url) file in the current directory.
+You can compare your playbook with the [assert_input_example.yml](assert_input_example.yml) file in the current directory.
 
 ## Summary
 
