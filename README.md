@@ -52,6 +52,8 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 
 ### 6. Handler
 
+- 6.1 [Handler](handler/readme.md)
+
 ### 7. Blocks
 
 ### 8. Templates
