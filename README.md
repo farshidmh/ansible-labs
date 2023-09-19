@@ -61,6 +61,8 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 
 ### 8. Templates
 
+- 8.1 [Template](template/basic/readme.md)
+
 ### 9. Ansible Vault
 
 ### 10. Roles
