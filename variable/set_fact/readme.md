@@ -64,7 +64,7 @@ The objective of this lab is to explore the use of the `set_fact` module in an A
 7. Run the playbook using the following command:
 
 ```
-ansible-playbook -i your_inventory_file.ini facts_playbook.yml
+ansible-playbook facts_playbook.yml
 ```
 
 Replace `your_inventory_file.ini` with the path to your inventory file if you're not using the default inventory.
