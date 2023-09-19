@@ -7,7 +7,6 @@
     - name: "user_number"
       prompt: "Please enter a number between 1 and 10"
       private: no
-      validate: "^[1-9]|10$"
 
   tasks:
     - name: Assert that the number is between 1 and 10
