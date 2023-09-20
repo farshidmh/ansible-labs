@@ -70,4 +70,7 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 
 - 10.1 [Roles](role/readme.md)
 
+### Extra
+
+- [Log per host](extra/log_per_host/readme.md)
 
