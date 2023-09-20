@@ -68,6 +68,6 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 
 ### 10. Roles
 
-- 10.1 [Roles](roles/readme.md)
+- 10.1 [Roles](role/readme.md)
 
 
