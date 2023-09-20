@@ -73,4 +73,5 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 ### Extra
 
 - [Log per host](extra/log_per_host/readme.md)
+- [Fact cache](extra/fact_cache/readme.md)
 
