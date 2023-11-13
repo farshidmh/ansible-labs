@@ -28,7 +28,7 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 
 ### 3. Variables
 
-- 3.1 [Basic Playbook](basic/play.yaml)
+- 3.1 [Basic Playbook](basic/readme.md)
 - 3.2 [Variable in Playbook](variable/vars/sample.yml)
 - 3.3 [Prompt the user](loop/with_items/item_iteration.yml)
 - 3.4 [Variables in external](loop/with_items/item_iteration.yml)
