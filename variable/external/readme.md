@@ -1,4 +1,4 @@
-# Advanced Lab Instructions: Managing Complex Variables in Ansible Playbooks
+# Managing Complex Variables in Ansible Playbooks
 
 ## Overview
 
