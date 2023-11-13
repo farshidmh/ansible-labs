@@ -32,8 +32,8 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 - 3.2 [Variable in Playbook](variable/vars/readme.md)
 - 3.3 [Prompt the user](variable/prompt/prompt.md)
 - 3.4 [Variables in external](variable/external/readme.md)
-- 3.5 [Set Fact](variable/set_fact/readme.md)
-- 3.6 [Register Variable](variable/register/readme.md)
+- 3.5 [Register Variable](variable/register/readme.md)
+- 3.6 [Set Fact](variable/set_fact/readme.md)
 
 ### 4. Condition
 
