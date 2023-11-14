@@ -46,7 +46,7 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 
 ### 5. Loops
 
-- 5.1 [With_items](loop/with_items/item_iteration.yml)
+- 5.1 [With_items](loop/with_items/readme.md)
 - 5.2 [Loop](loop/loop/readme.md)
 - 5.3 [Loop with external variable](loop/loop_var/readme.md)
 - 5.4 [Loop external task file](loop/loop_task/readme.md)
