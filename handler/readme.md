@@ -2,7 +2,7 @@
 
 ## Duration
 
-Approximately 20 minutes
+Approximately 30 minutes
 
 ## Objective
 
