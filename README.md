@@ -34,6 +34,7 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 - 3.4 [Variables in external](variable/external/readme.md)
 - 3.5 [Register Variable](variable/register/readme.md)
 - 3.6 [Set Fact](variable/set_fact/readme.md)
+- 3.7 [Get Facts](extra/cpu_count/readme.md)
 
 ### 4. Condition
 
