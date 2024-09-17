@@ -1,78 +1,113 @@
-# Ansible Playbook: Setting and Using Facts
+# **Ansible Playbook: Setting and Using Facts**
 
-## Duration
+## **Duration**
 
 Approximately 20 minutes
 
-## Objective
+## **Objective**
 
-The objective of this lab is to explore the use of the `set_fact` module in an Ansible playbook. This lab will guide you through the process of defining facts dynamically during playbook execution and referencing them in subsequent tasks.
+The goal of this lab is to familiarize yourself with the `set_fact` module in Ansible. You'll learn how to dynamically define custom facts (variables) during playbook execution and then use them in
+subsequent tasks. This is particularly useful for cases where values need to be calculated or assigned during runtime.
 
-## Prerequisites:
+## **Prerequisites**
 
-- Basic understanding of Ansible.
-- Ansible installed on your machine.
+- Basic knowledge of Ansible (understanding playbooks and tasks).
+- Ansible installed on your control node.
 - Access to target hosts in the `webservers` inventory group.
 
-## Step-by-step guide:
+## **Step-by-step Guide**
 
-### Step A: Set up the Ansible Playbook
+### **Step A: Set up the Ansible Playbook**
 
-1. Create a new YAML file named `facts_playbook.yml`.
-2. Specify the play's name, target hosts, and whether to gather facts or not.
+1. **Create a new YAML file:**
+    - Open your text editor and create a new file named `facts_playbook.yml`.
 
-```yaml
-- name: A play with variables
-  hosts: webservers
-  gather_facts: no
-```
+2. **Define the play:**
+    - In this file, specify the play's name, the hosts to target (in this case, `webservers`), and whether you want to gather facts. In this case, we will disable automatic fact-gathering by setting
+      `gather_facts` to `no`. This is important when we want to control which facts are gathered or define custom ones ourselves.
 
-### Step B: Define Facts Using `set_fact` Module
+   Example content for `facts_playbook.yml`:
 
-3. Within the tasks, create the first task to define three new facts (`fact_one`, `fact_other`, and `john_fact`) using the `set_fact` module.
+   ```yaml
+   ---
+   - name: A play with custom variables (facts)
+     hosts: webservers
+     gather_facts: no
+   ```
 
-```yaml
-  tasks:
-    - name: Setting host facts using set_fact module
-      set_fact:
-        fact_one: "Hello"
-        fact_other: "Bye"
-        john_fact: "Doe"
-```
+   **Explanation:**
+    - `gather_facts: no` disables automatic gathering of facts like the host's IP address, OS version, etc. This keeps the playbook simple for this lab, but you can enable it if needed.
 
-### Step C: Utilize Facts in Tasks
+### **Step B: Define Facts Using the `set_fact` Module**
 
-4. Create a task to print the value of the `john_fact`.
+3. **Add tasks to define custom facts:**
+    - Inside the `tasks` section, use the `set_fact` module to define new facts. Facts set using `set_fact` are essentially variables that are available for the rest of the playbook once defined. You
+      can set them dynamically based on conditions, values from previous tasks, or as static values.
 
-```yaml
-    - name: Print some facts
-      debug:
-        var: john_fact
-```
+   Example content:
 
-5. Create another task to print the value of the `fact_other`. Note that there's a typo in the variable name provided ("fact_othert"), so make sure to correct it.
+   ```yaml
+     tasks:
+       - name: Setting host facts using set_fact module
+         set_fact:
+           fact_one: "Hello"
+           fact_other: "Bye"
+           john_fact: "Doe"
+   ```
 
-```yaml
-    - name: Print some facts
-      debug:
-        var: fact_other
-```
+   **Explanation:**
+    - `fact_one`, `fact_other`, and `john_fact` are now custom facts that can be referenced later in the playbook.
+    - The values you assign can be static (like in this case) or dynamic based on other variables or outputs of previous tasks.
 
-### Step D: Execute the Playbook
+### **Step C: Utilize Facts in Subsequent Tasks**
 
-6. Save the `facts_playbook.yml` file.
-7. Run the playbook using the following command:
+4. **Use the custom facts:**
+    - Now that you've set the facts, let’s use the `debug` module to display them. The `debug` module is handy for troubleshooting and ensuring your facts are being set correctly.
 
-```
-ansible-playbook facts_playbook.yml
-```
+   Example task to print the value of `john_fact`:
 
-Replace `your_inventory_file.ini` with the path to your inventory file if you're not using the default inventory.
+   ```yaml
+       - name: Print the value of john_fact
+         debug:
+           var: john_fact
+   ```
 
-## Final File
+   **Explanation:**
+    - The `debug` module will output the value of the `john_fact` variable. You’ll see the message `"Doe"` printed when this task runs.
 
-You can compare your playbook with the [facts_playbook.yml](facts_playbook.yml) file in the current directory.
+5. **Print another fact:**
+    - Similarly, let’s print the `fact_other`. The previous version had a typo (`fact_othert`), so be sure to correct it here.
 
-## Summary
+   Correct example:
 
-This lab provided a hands-on approach to working with the `set_fact` module in Ansible. We dynamically set facts during the playbook's execution and utilized them in subsequent tasks. Using facts, you can store specific information about a host and leverage it for various automation tasks.
+   ```yaml
+       - name: Print the value of fact_other
+         debug:
+           var: fact_other
+   ```
+
+   **Explanation:**
+    - This task will print the value of `fact_other`, which is `"Bye"`. If the variable name is incorrect, Ansible will throw an error or display `undefined`, helping you debug variable issues.
+
+### **Step D: Execute the Playbook**
+
+6. **Save the file:**
+    - Once your playbook is complete, save it as `facts_playbook.yml`.
+
+7. **Run the playbook:**
+    - Open a terminal and run the playbook with the following command:
+
+   ```bash
+   ansible-playbook facts_playbook.yml
+   ```
+
+8. **Check the output:**
+    - You should see the output from the `debug` tasks, displaying the values of `john_fact` (`"Doe"`) and `fact_other` (`"Bye"`).
+
+## **Summary**
+
+In this lab, you learned how to use the `set_fact` module in Ansible to dynamically define facts (variables) during playbook execution. You then saw how to use these facts in subsequent tasks to make
+your playbooks more flexible and dynamic. Using `set_fact` allows you to capture and reuse values in your automation process, enhancing your ability to manage complex scenarios where variables might
+not be known in advance or need to be set based on conditions during the playbook run.
+
+By mastering the `set_fact` module, you can create more adaptable and powerful Ansible playbooks tailored to specific environments or hosts.
