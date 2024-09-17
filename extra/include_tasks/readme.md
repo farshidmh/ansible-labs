@@ -67,7 +67,7 @@ In this lab, you'll learn how to use `include_tasks` in Ansible to include separ
 2. Run the playbook using the following command:
 
    ```bash
-   ansible-playbook include_tasks_play.yml -i inventory
+   ansible-playbook include_tasks_play.yml
    ```
 
 3. The playbook will include and execute both task files, and you will see debug messages from both `common_tasks.yml` and `env_specific_tasks.yml`.

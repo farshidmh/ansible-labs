@@ -73,7 +73,7 @@ In this lab, you will learn how to use `include_vars` to include variable files 
 2. Run the playbook using the following command:
 
    ```bash
-   ansible-playbook include_vars_play.yml -i inventory
+   ansible-playbook include_vars_play.yml
    ```
 
 3. The playbook will load variables from both `general_vars.yml` and `env_vars.yml`, and you will see the variable values printed in the debug messages.
