@@ -28,51 +28,53 @@ Ubuntu 22.04 LTS workstation with Ansible installed.
 
 ### 3. Variables
 
-- 3.1 [Basic Playbook](basic/readme.md)
-- 3.2 [Variable in Playbook](variable/vars/readme.md)
-- 3.3 [Prompt the user](variable/prompt/prompt.md)
-- 3.4 [Variables in external](variable/external/readme.md)
-- 3.5 [Register Variable](variable/register/readme.md)
-- 3.6 [Set Fact](variable/set_fact/readme.md)
-- 3.7 [Get Facts](extra/cpu_count/readme.md)
+- [Basic Playbook](basic/readme.md)
+- [Variable in Playbook](variable/vars/readme.md)
+- [Prompt the user](variable/prompt/prompt.md)
+- [Variables in external](variable/external/readme.md)
+- [Include Variables](variable/include_vars/readme.md)
+- [Register Variable](variable/register/readme.md)
+- [Set Fact](variable/set_fact/readme.md)
+- [Get Facts](extra/cpu_count/readme.md)
 
 ### 4. Condition
 
-- 4.1 [Basic](condition/basic/readme.md)
-- 4.2 [Cast variables](condition/cast/readme.md)
-- 4.3 [Complex](condition/complex/readme.md)
-- 4.4 [Assert](condition/assert/readme.md)
-- 4.5 [Challenge](condition/challenge/readme.md)
+- [Basic](condition/basic/readme.md)
+- [Cast variables](condition/cast/readme.md)
+- [Complex](condition/complex/readme.md)
+- [Assert](condition/assert/readme.md)
+- [Challenge](condition/challenge/readme.md)
 
 ### 5. Loops
 
-- 5.1 [With_items](loop/with_items/readme.md)
-- 5.2 [Loop](loop/loop/readme.md)
-- 5.3 [Loop with external variable](loop/loop_var/readme.md)
-- 5.4 [Loop external task file](loop/loop_task/readme.md)
+- [With_items](loop/with_items/readme.md)
+- [Loop](loop/loop/readme.md)
+- [Loop with external variable](loop/loop_var/readme.md)
+- [Loop external task file](loop/loop_task/readme.md)
 
 ### 6. Handler
 
-- 6.1 [Handler](handler/readme.md)
+- [Handler](handler/readme.md)
 
 ### 7. Blocks
 
-- 7.1 [Block](block/simple/readme.md)
+- [Block](block/simple/readme.md)
 
 ### 8. Templates
 
-- 8.1 [Template](template/basic/readme.md)
+- [Template](template/basic/readme.md)
 
 ### 9. Ansible Vault
 
-- 9.1 [Vault](vault/readme.md)
+- [Vault](vault/readme.md)
 
 ### 10. Roles
 
-- 10.1 [Roles](role/readme.md)
+- [Roles](role/readme.md)
 
 ### Extra
 
 - [Log per host](extra/log_per_host/readme.md)
-- [Fact cache](extra/fact_cache/readme.md)
+- [Fact cache](extra/fact_cache/readme.md)1
+- [Include Tasks](extra/include_tasks/readme.md)
 
