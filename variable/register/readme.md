@@ -34,7 +34,7 @@ Learn to use the `register` keyword in Ansible to capture and utilize the output
     ```yaml
       tasks:
         - name: Create a test file
-          ansible.builtin.copy:
+          copy:
             content: "Sample text for testing."
             dest: /home/ubuntu/a.txt
     ```
