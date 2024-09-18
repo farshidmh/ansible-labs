@@ -36,6 +36,10 @@ In this lab, you will learn how to use Ansible handlers to respond to change eve
 
 ```yaml
   tasks:
+    - name: update package
+      apt: 
+        update_cache: yes
+      
     - name: Install Package
       apt:
         name: apache2
